@@ -1,0 +1,403 @@
+[ERROR] 2019-02-09 09:50:59.277 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 09:51:46.109 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 09:54:59.503 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 09:59:29.887 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:01:10.490 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:03:29.180 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:03:39.973 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:05:10.398 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:20:48.732 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:20:57.182 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:21:03.919 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:24:38.952 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:27:05.224 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:38:25.980 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:41:11.969 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:46:09.295 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 10:56:54.909 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 11:02:45.669 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 11:03:35.275 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 11:07:31.361 [main] ConnectionUtil - Unable to get connection to database
+[ERROR] 2019-02-09 11:09:39.806 [main] ConnectionUtil - Unable to get connection to database
+[TRACE] 2019-02-09 12:50:35.106 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 12:52:14.033 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 12:53:26.444 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:09:18.048 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:11:51.335 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:13:49.578 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:14:43.665 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:45:46.332 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:52:51.214 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:53:57.425 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 13:54:25.620 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:29:47.582 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:30:22.406 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:31:07.179 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:32:07.577 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:33:25.459 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:34:12.600 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:34:44.880 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:52:46.280 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:53:14.769 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:53:46.082 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:54:05.133 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:54:36.045 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 17:55:05.804 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:03:48.855 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:04:27.782 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:04:45.177 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:05:07.312 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:07:34.196 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:07:59.801 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:10:20.506 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:10:38.593 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:17:01.640 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:17:29.264 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:18:06.256 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:18:20.719 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:18:56.250 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:19:08.806 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:31:36.092 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:31:48.158 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:39:07.856 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 18:39:24.720 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:19:18.259 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:19:18.479 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:20:15.440 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:20:15.638 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:22:37.556 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:22:37.762 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:23:19.634 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:23:19.843 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:24:16.291 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:24:17.932 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:24:27.694 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:24:27.751 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:26:55.046 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:29:35.675 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:29:35.873 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 19:34:42.472 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 19:34:53.550 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:02:55.529 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:18:01.035 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:18:08.235 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:19:45.075 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:20:46.467 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:29:05.612 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:29:09.817 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:29:26.792 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:29:48.465 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:35:26.891 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 21:35:30.422 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:11:28.023 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:11:32.919 [main] UserActionsOracle - Enter
+[ERROR] 2019-02-09 22:11:32.982 [main] UserActionsOracle - Catching
+java.sql.SQLSyntaxErrorException: ORA-00904: "REGISTERED_USER"."USER_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at com.revature.project0.dao.AccountActionsOracle.viewAccounts(AccountActionsOracle.java:85) [classes/:?]
+	at com.revature.project0.service.AccountService.viewAccounts(AccountService.java:38) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.manageAccountPage(Pages.java:303) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.accountsLandingPage(Pages.java:286) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.loginPage(Pages.java:134) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.landingPage(Pages.java:57) [classes/:?]
+	at com.revature.project0.BankAssignment.App.main(App.java:19) [classes/:?]
+[ERROR] 2019-02-09 22:11:32.985 [main] UserActionsOracle - Database error.
+java.sql.SQLSyntaxErrorException: ORA-00904: "REGISTERED_USER"."USER_ID": invalid identifier
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at com.revature.project0.dao.AccountActionsOracle.viewAccounts(AccountActionsOracle.java:85) [classes/:?]
+	at com.revature.project0.service.AccountService.viewAccounts(AccountService.java:38) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.manageAccountPage(Pages.java:303) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.accountsLandingPage(Pages.java:286) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.loginPage(Pages.java:134) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.landingPage(Pages.java:57) [classes/:?]
+	at com.revature.project0.BankAssignment.App.main(App.java:19) [classes/:?]
+[TRACE] 2019-02-09 22:11:32.986 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 22:16:26.319 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:16:28.612 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:16:28.708 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@60db1c0e]])
+[TRACE] 2019-02-09 22:17:06.455 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:17:09.721 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:17:50.103 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:17:51.745 [main] UserActionsOracle - Enter
+[ERROR] 2019-02-09 22:17:51.805 [main] UserActionsOracle - Catching
+java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at com.revature.project0.dao.AccountActionsOracle.viewAccounts(AccountActionsOracle.java:85) [classes/:?]
+	at com.revature.project0.service.AccountService.viewAccounts(AccountService.java:38) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.manageAccountPage(Pages.java:303) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.accountsLandingPage(Pages.java:286) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.loginPage(Pages.java:134) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.landingPage(Pages.java:57) [classes/:?]
+	at com.revature.project0.BankAssignment.App.main(App.java:19) [classes/:?]
+[ERROR] 2019-02-09 22:17:51.808 [main] UserActionsOracle - Database error.
+java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at com.revature.project0.dao.AccountActionsOracle.viewAccounts(AccountActionsOracle.java:85) [classes/:?]
+	at com.revature.project0.service.AccountService.viewAccounts(AccountService.java:38) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.manageAccountPage(Pages.java:303) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.accountsLandingPage(Pages.java:286) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.loginPage(Pages.java:134) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.landingPage(Pages.java:57) [classes/:?]
+	at com.revature.project0.BankAssignment.App.main(App.java:19) [classes/:?]
+[TRACE] 2019-02-09 22:17:51.809 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 22:21:14.001 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:21:15.919 [main] UserActionsOracle - Enter
+[ERROR] 2019-02-09 22:21:15.977 [main] UserActionsOracle - Catching
+java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at com.revature.project0.dao.AccountActionsOracle.viewAccounts(AccountActionsOracle.java:85) [classes/:?]
+	at com.revature.project0.service.AccountService.viewAccounts(AccountService.java:38) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.manageAccountPage(Pages.java:306) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.accountsLandingPage(Pages.java:289) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.loginPage(Pages.java:137) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.landingPage(Pages.java:60) [classes/:?]
+	at com.revature.project0.BankAssignment.App.main(App.java:19) [classes/:?]
+[ERROR] 2019-02-09 22:21:15.980 [main] UserActionsOracle - Database error.
+java.sql.SQLSyntaxErrorException: ORA-00933: SQL command not properly ended
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502) ~[ojdbc7-12.1.0.jar:12.1.0.1.0]
+	at com.revature.project0.dao.AccountActionsOracle.viewAccounts(AccountActionsOracle.java:85) [classes/:?]
+	at com.revature.project0.service.AccountService.viewAccounts(AccountService.java:38) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.manageAccountPage(Pages.java:306) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.accountsLandingPage(Pages.java:289) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.loginPage(Pages.java:137) [classes/:?]
+	at com.revature.project0.BankAssignment.Pages.landingPage(Pages.java:60) [classes/:?]
+	at com.revature.project0.BankAssignment.App.main(App.java:19) [classes/:?]
+[TRACE] 2019-02-09 22:21:15.981 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-09 22:21:36.842 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:21:38.125 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:22:50.426 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:22:51.951 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:22:51.982 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@60db1c0e]])
+[TRACE] 2019-02-09 22:23:29.393 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:23:31.486 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:28:13.811 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:28:14.905 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:28:14.941 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@60db1c0e]])
+[TRACE] 2019-02-09 22:28:29.670 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:28:31.171 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:29:19.718 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@5710768a]])
+[TRACE] 2019-02-09 22:31:19.638 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:31:20.713 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:31:20.744 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@60db1c0e]])
+[TRACE] 2019-02-09 22:31:42.528 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:31:42.569 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@2438dcd]])
+[TRACE] 2019-02-09 22:32:20.259 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:32:22.118 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:32:31.302 [main] UserActionsOracle - Exit with(Optional[[com.revature.project0.model.BankAccount@5710768a]])
+[TRACE] 2019-02-09 22:33:32.721 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:33:33.598 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:34:29.429 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:34:30.558 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:35:17.838 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:35:18.873 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:36:03.186 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:36:04.247 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:36:43.933 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-09 22:36:46.264 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 08:46:15.332 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 08:46:21.743 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 08:52:11.320 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 08:52:13.928 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 08:53:50.647 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 08:55:11.447 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 09:00:31.865 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 09:00:38.366 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 09:03:08.166 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 09:03:11.906 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:24:29.271 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:24:37.815 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:31:43.453 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:31:46.661 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:32:15.401 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:32:19.371 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:38:23.743 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:38:25.780 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:39:28.399 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:50:53.195 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 11:50:56.969 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:03:55.503 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:03:58.083 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:05:03.043 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:05:05.008 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:05:23.164 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:05:24.767 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:08:23.583 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:08:25.045 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:08:42.434 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:08:43.660 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:09:52.422 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:10:01.014 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:10:24.681 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:10:26.033 [main] UserActionsOracle - Enter
+[ERROR] 2019-02-10 12:13:21.772 [main] ConnectionUtil - Unable to get connection to database
+[TRACE] 2019-02-10 12:13:26.660 [main] UserActionsOracle - Enter
+[ERROR] 2019-02-10 12:13:26.661 [main] ConnectionUtil - Unable to get connection to database
+[TRACE] 2019-02-10 12:13:26.662 [main] UserActionsOracle - Exit with(Optional.empty)
+[TRACE] 2019-02-10 12:23:54.676 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:23:56.933 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:24:00.201 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:24:21.583 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:24:22.525 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:24:50.191 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:28:23.670 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:28:25.615 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:28:28.122 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:30:28.536 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:30:30.777 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:30:36.392 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:31:30.862 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:31:32.183 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:31:39.086 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:31:55.229 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:32:07.143 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:32:12.401 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:32:19.818 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:33:22.684 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:33:28.763 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:35:25.169 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:35:26.511 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:36:31.311 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:36:32.446 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:36:59.666 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:37:00.837 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:37:11.023 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:37:47.717 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:37:53.218 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:38:52.134 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:38:53.436 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:39:03.176 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:39:09.956 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:57:36.418 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:57:37.815 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:57:48.052 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:58:43.028 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:58:44.076 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:58:48.715 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 12:59:04.848 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:15:20.907 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:15:28.017 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:15:36.293 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:16:06.116 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:16:17.782 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:16:39.568 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:16:47.434 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:16:50.279 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:19:06.467 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:19:18.079 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:19:22.836 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:19:53.424 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:19:56.321 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:20:36.059 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:24:48.432 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:24:59.186 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:25:04.502 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:25:10.163 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:25:21.897 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:25:32.597 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:29:08.408 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:29:11.610 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:29:23.462 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:29:28.074 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:29:49.198 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:29:54.005 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:30:11.839 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:30:18.975 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:30:21.597 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:30:27.537 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:31:13.664 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:31:15.986 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:31:34.374 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:31:39.051 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:31:41.843 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:33:05.034 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:33:07.004 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:33:15.322 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:34:39.398 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:34:44.493 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:34:48.557 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:34:51.991 [main] UserActionsOracle - Enter
+[TRACE] 2019-02-10 15:35:06.832 [main] UserActionsOracle - Enter

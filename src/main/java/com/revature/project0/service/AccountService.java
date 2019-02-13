@@ -1,5 +1,6 @@
 package com.revature.project0.service;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 import com.revature.project0.dao.*;
@@ -20,17 +21,13 @@ public class AccountService {
 		return service;
 	}
 	
-	public Optional<Boolean> login(String user, String pass) throws Exception {
-		return Optional.empty();
-	}
-	
 	/**
 	 * if
 	 * 1. if boolean true: success
 	 * 2. if boolean false: database success but username taken
 	 * 3. empty optional: database failure
 	 */
-	public Optional<Boolean> createAccount(int ownerID, String accountName) throws Exception {
+	public Optional<Boolean> createAccount(int ownerID, String accountName) throws SQLException {
 		return dao.create(ownerID, accountName);
 	}
 	

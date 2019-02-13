@@ -10,6 +10,4 @@ public interface UserActionsDao {
 			String firstName, String email, String address, String state, String city);
 	
 	Optional<Boolean> usernameAvailability(String username);
-	
-	Optional<Boolean> logout();
 }

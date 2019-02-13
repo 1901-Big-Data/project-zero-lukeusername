@@ -18,7 +18,7 @@ import com.revature.project0.util.ConnectionUtil;
 
 public class AccountActionsOracle implements AccountActionsDao{
 	private static AccountActionsOracle instance;
-	private static final Logger log = LogManager.getLogger(UserActionsOracle.class);
+	private static final Logger log = LogManager.getLogger(AccountActionsOracle.class);
 
 	private AccountActionsOracle() {
 	}
@@ -134,19 +134,18 @@ public class AccountActionsOracle implements AccountActionsDao{
 		log.traceEntry();
 		
 		Connection con = ConnectionUtil.getConnection();
-
+		
 		if (con == null) {
 			log.traceExit(Optional.empty());
 			return Optional.empty();
 		}
-
+		
 		try {
-			String sql = "SELECT * FROM open_accounts JOIN registered_user on registered_user.user_id = open_accounts.user_id";
+			String sql = "SELECT * FROM open_accounts WHERE user_id = " + ownerID;
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
 
 			List<BankAccount> listOfAccounts = new ArrayList<BankAccount>();
-
 			while (rs.next()) {
 				listOfAccounts.add(new BankAccount(rs.getInt("account_id"), rs.getInt("balance"),
 						rs.getString("account_name"),rs.getInt("user_id")));

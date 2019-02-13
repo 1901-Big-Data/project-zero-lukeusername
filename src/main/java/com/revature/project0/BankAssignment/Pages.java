@@ -1,56 +1,100 @@
 package com.revature.project0.BankAssignment;
 
-import java.sql.SQLException;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.revature.project0.dao.AccountActionsOracle;
 import com.revature.project0.model.BankAccount;
 import com.revature.project0.model.BankMember;
 import com.revature.project0.service.*;
-
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 public class Pages {
 	protected static BankMember session;
-
+	private static final Logger log = LogManager.getLogger(AccountActionsOracle.class);
 	// for routing between pages
 	enum appPage { 
-	    LOGIN, MANAGE_ACCOUNT, CREATE_ACCOUNT, DELETE_ACCOUNT, EXIT, REGISTER, DONOTHING; 
+	    LOGIN, MANAGE_ACCOUNT, CREATE_ACCOUNT, DELETE_ACCOUNT, EXIT, REGISTER, DONOTHING, ADMIN_LANDING; 
 	}
 	
 	protected static void landingPage() {
     	boolean keepRunning = true;
         boolean verifiedInput = false;
-    	appPage page = appPage.LOGIN;
-    	int nav;
+    	appPage page = appPage.DONOTHING;
+    	int nav = 0;
+    	String yesOrNo = "n";
     	
-    	do {
-            System.out.println( "- - - - - - - - - - - - - -\n\nWelcome to LukeBank!\n\nType '1', '2', or '3'"
-            		+ "\n 1. Login"
-            		+ "\n 2. Register" 
-            		+ "\n 3. Exit Application");
-            
-            // validating input so that no exceptions are thrown
-            do {
-
-            	// it must be an int
-    	        while (!App.sc.hasNextInt()) {
-    	        	System.out.println("Invalid input.  Only '1', '2', or '3' can be entered.");
-    	        	App.sc.next();
-    	        }
-    	        
-    	        // it must be one of the given options
-    	        nav = App.sc.nextInt();
-    	        if (nav < 1 || nav > 3) {
-    	        	System.out.println("Invalid input.  Only '1', '2', or '3' can be entered.");
-    	        }
-    	        else {
+    	InputStream in = null;
+		try {
+			// load information from properties file
+			Properties props = new Properties();
+			in = new FileInputStream(
+					"src/main/Resources/connection.properties");
+			props.load(in);
+			
+			session = UserService.getService().login(props.getProperty("admin.username"), props.getProperty("admin.password")).get();
+			
+			System.out.println("Valid admin credentials have been found.  Would you like to automatically login as an administrator?"
+					+ "\n\n         (Y/N)");
+			
+            do {           	
+    	        if (App.sc.hasNext("Y") || App.sc.hasNext("y") || App.sc.hasNext("n") || App.sc.hasNext("N")) {
     	        	verifiedInput = true;
+    	        	yesOrNo = App.sc.next().toLowerCase();
     	        }
+    	        else
+    	        	System.out.println("Invalid input.  Enter 'y' or 'n'.");
             }while(!verifiedInput);
-            
+		} catch (Exception e) {
+		} finally {
+			try {
+				in.close();
+			} catch (IOException e) {
+				log.error("Could not close connection");
+			}
+		}
+    	do {
+    		if (yesOrNo.equals("y")) {
+    			yesOrNo = "";
+    			nav = 4;
+    		}else {
+    			session = null;
+	            System.out.println("- - - - - - - - - - - - - -\n\nWelcome to LukeBank!\n\nType '1', '2', or '3'"
+	            		+ "\n 1. Login"
+	            		+ "\n 2. Register" 
+	            		+ "\n 3. Exit Application");
+	            
+	            verifiedInput = false;
+	            // validating input so that no exceptions are thrown
+	            do {
+	            	// it must be an int
+	    	        while (!App.sc.hasNextInt()) {
+	    	        	System.out.println("Invalid input.  Only '1', '2', or '3' can be entered.");
+	    	        	App.sc.next();
+	    	        }
+	    	        
+	    	        // it must be one of the given options
+	    	        nav = App.sc.nextInt();
+	    	        if (nav < 1 || nav > 3) {
+	    	        	System.out.println("Invalid input.  Only '1', '2', or '3' can be entered.");
+	    	        }
+	    	        else {
+	    	        	verifiedInput = true;
+	    	        }
+	            }while(!verifiedInput);
+    		}
             // convert user choice to page value
-            if (nav == 1)
+            if (nav == 4)
+            	page = appPage.ADMIN_LANDING;
+            else if (nav == 1)
             	page = appPage.LOGIN;
             else if (nav == 2)
             	page = appPage.REGISTER;
@@ -63,6 +107,8 @@ public class Pages {
                          break;
                 case REGISTER:  registerPage();
                          break;
+                case ADMIN_LANDING: adminLandingPage();
+                		break;
                 default:
                 	keepRunning = false;
                 	System.out.println("Closing application...");
@@ -73,7 +119,6 @@ public class Pages {
     protected static int loginPage() {
     	String username = "", password = "";
     	boolean db_said_yes = false;
-    	App.sc.nextLine();
     	do {
     		System.out.println("- - - - - - - - - - - - - -\n\nLOGIN PAGE\n"
 	    			+ "(Type 'b' to go back to Main Page)\n\n"
@@ -135,13 +180,168 @@ public class Pages {
 	        
     	} while(!db_said_yes);
     	
-    	// ROUTE TO USER PAGE
-    	accountsLandingPage();
+    	if (session.isAdmin()) {
+    		// ROUTE TO ADMIN PAGE
+    		adminLandingPage();
+    	}
+    	else
+    		// ROUTE TO USER PAGE
+    		accountsLandingPage();
     	
     	return 0;
     }
+    
+    // A superuser can delete all users.
+    protected static int adminLandingPage() {
+    	do {
+	        System.out.println( "- - - - - - - - - - - - - -\n\nUSER MANAGEMENT PAGE (ADMIN ONLY)\n\n"
+	    			+ "(Type 'b' to log out at any time)\n\n"
+	        		+ "Logged in as: " + session.getUsername() + "\n\n");
+	
+	        
+	        List<BankMember> temp;
+	        System.out.println("The following is a list of all users:");
+	        //need list of all users
+	        try {
+				temp = AdminService.getService().getAllUsers().get();
+				
+		        for (int i = 0; i < temp.size(); i++){
+		        	if (temp.get(i).getMemberId() != session.getMemberId()) {
+			        	System.out.println("Member ID: " + temp.get(i).getMemberId());
+			        	System.out.println("First name: " + temp.get(i).getFirstName());
+			        	System.out.println("Last name: " + temp.get(i).getLastName() + "\n");
+		        	}
+		        }
+		        
+	    		System.out.println("You have two options:"
+	    				+ "\n  1) Enter the Member ID of the user you wish to modify"
+	    				+ "\n  2) Enter 'create' to create a new user\n");
+		        
+		        Boolean verifiedInput = false;
+		        
+		        int indexOfID = 0;
+		        int chosenID = 0;
+		        // validating input so that no exceptions are thrown
+		        do {
+		        	if (App.sc.hasNext("b")) {
+		        		App.sc.next();
+		        		return 0;
+		        	}
+		        	// it must be an int
+			        if(App.sc.hasNext("create")) {
+			        	App.sc.next();
+			        	registerPage();
+			        	return 0;
+			        }
+			        // it must be one of the given options
+			        chosenID = App.sc.nextInt();
+			        
+			        int j = 0;
+			        while (!verifiedInput && j < temp.size()) {
+			        	if(chosenID == temp.get(j).getMemberId()) {
+			        		verifiedInput = true;
+			        		indexOfID = j;
+			        	}
+			        	else
+			        		j++;
+			        }
+			        
+			        if (j == temp.size()) {
+			        	System.out.println("The Member ID you have entered was not found.");
+			        }
+		        }while(!verifiedInput);
+		        
+		        adminModifyPage(temp.get(indexOfID));
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    	}while(true);
+    }
+    protected static int adminModifyPage(BankMember modifyMe) {
+        System.out.println("- - - - - - - - - - - - - -\n\nMODIFICATION PAGE (ADMIN ONLY)\n\n"
+    			+ "CURRENT USER YOU ARE MODIFYING: \n1. Username: " + modifyMe.getUsername() + "\n2. First name: " + modifyMe.getFirstName()
+    			+ "\n3. Last name: " + modifyMe.getLastName() + "\n4. Email: " + modifyMe.getEmail() + "\n5. Address: " + modifyMe.getAddress() 
+    			+ "\n6. State: " + modifyMe.getState() + "\n7. City: " + modifyMe.getCity() + "\n8. Delete This User" + "\n9. Back to previous page\n");
+        
+        //( user, lastName, firstName,
+		//email, address, state, city);
+        System.out.println( "You have two options:\n\n  a) Enter the number of the field you wish to edit, '1' through '7'"
+        		+ "\n  b) Enter '8' to delete");
+        
+        Boolean verifiedInput = false;
+        int choice = 0;
+        // validating input so that no exceptions are thrown
+        do {
+        	// it must be an int
+	        while (!App.sc.hasNextInt()) {
+	        	System.out.println("Invalid input.  Only '1' through '9' can be entered.");
+	        	App.sc.next();
+	        }
+	        
+	        // it must be one of the given options
+	        choice = App.sc.nextInt();
+	        if (choice == 9)
+	        	return 0;
+	        if (choice < 1 || choice > 9) {
+	        	System.out.println("Invalid input.  Only '1' through '9' can be entered.");
+	        }
+	        else {
+	        	verifiedInput = true;
+	        }
+        }while(!verifiedInput);
+        
+		try {
+        String newVal;
+        switch (choice) {
+        	// username
+	        case 1:  
+	        	newVal = Pages.grabValidString(6, "username");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "username", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 2:
+	        	newVal = Pages.grabValidString(2, "first name");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "first_name", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 3:
+	        	newVal = Pages.grabValidString(2, "last name");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "last_name", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 4: 
+	        	newVal = Pages.grabValidString(7, "email");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "email_address", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 5:  
+	        	newVal = Pages.grabValidString(5, "address");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "physical_address", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 6:  
+	        	newVal = Pages.grabValidString(2, "state");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "usa_state", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 7:  
+	        	newVal = Pages.grabValidString(2, "city");
+				if (AdminService.getService().updateBankMember(modifyMe.getMemberId(), "city", newVal).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+	        case 8:  
+				if (AdminService.getService().deleteBankMember(modifyMe.getMemberId()).get()== true)
+					System.out.println("Update successful.  Returning to USER MANAGEMENT PAGE.");
+				break;
+			}
+        }
+   	 	catch (Exception e) {
+			e.printStackTrace();
+		}
+    	return 0;
+    }
     protected static int registerPage() {
-    	App.sc.nextLine();
     	boolean passwordMatches = false;
     	String username = "", password = "", passwordCheck = "", lastName = "", firstName = "", 
     			email = "", address = "", state = "", city = "";
@@ -157,6 +357,10 @@ public class Pages {
     	
         boolean verifiedInput = false;
         do {
+        	if (App.sc.hasNext("b")) {
+        		App.sc.next();
+        		return 0;
+        	}
         	username = App.sc.nextLine();
         	username = username.toLowerCase();
 	        if (username.length() < 6) {
@@ -230,7 +434,7 @@ public class Pages {
     	
     	try {
     		if(UserService.getService().register(username, password, false, lastName, firstName, email, address, state, city).get()) {
-    			System.out.println("Account successfully created. You may log in at any time.");
+    			System.out.println("Account successfully created. Login is now available.");
     		}
     		else {
     			System.out.println("Registration failed.  Try again or contact system administrator if the problem persists.");
@@ -249,7 +453,7 @@ public class Pages {
     	
     	do {
             System.out.println( "- - - - - - - - - - - - - -\n\nYOUR BANKING PAGE\n\n"
-            		+ "Logged in as: " + session.getUsername() + ". Please make a selection.\n\nType '1', '2', '3', or '4'"
+            		+ "Logged in as: " + session.getUsername() + ". Please make a selection.\n\nType '1', '2', '3', '4', or '5'"
             		+ "\n 1. View/Manage Bank Account(s)"
             		+ "\n 2. View Personal Information" 
             		+ "\n 3. Create Banking Account"
@@ -325,7 +529,6 @@ public class Pages {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
     	if (temp.isEmpty()) {
     		System.out.println("You currently have no accounts open.");
     	}
@@ -355,8 +558,10 @@ public class Pages {
             verifiedInput=false;
             // retrieving / validating input
             do {
-            	if (App.sc.hasNext("b"))
+            	if (App.sc.hasNext("b")) {
+            		App.sc.next();
             		return 0;
+            	}
             	// it must be an int
     	        while (!App.sc.hasNextInt()) {
     	        	
@@ -395,8 +600,10 @@ public class Pages {
 	            		+ "For which account would you like to " + selection + "?\n");
     			// retrieving / validating input
 	            do {
-	            	if (App.sc.hasNext("b"))
+	            	if (App.sc.hasNext("b")) {
+	            		App.sc.next();
 	            		return 0;
+	            	}
 	            	// it must be an int
 	    	        while (!App.sc.hasNextInt()) {
 	    	        	System.out.println("Invalid input.  Only '1' through '" + temp.size() + "' may be entered.");
@@ -417,8 +624,10 @@ public class Pages {
             verifiedInput=false;
             double money;
             do {
-            	if (App.sc.hasNext("b"))
+            	if (App.sc.hasNext("b")) {
+            		App.sc.next();
             		return 0;
+            	}
             	// it must be an int
     	        while (!App.sc.hasNextDouble()) {
     	        	System.out.println("Must be a number.");
@@ -462,8 +671,10 @@ public class Pages {
             String yesOrNo = "";
             System.out.println("Would you like to perform another transaction?\n\n     (Y/N)");
             do {
-            	if (App.sc.hasNext("b"))
+            	if (App.sc.hasNext("b")) {
+            		App.sc.next();
             		return 0;
+            	}
             	// it must be an int            	
     	        else if (App.sc.hasNext("Y") || App.sc.hasNext("y") || App.sc.hasNext("n") || App.sc.hasNext("N")) {
     	        	verifiedInput = true;
@@ -527,7 +738,6 @@ public class Pages {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
     	if (temp.isEmpty()) {
     		System.out.println("You currently have no accounts open.");
     	}
@@ -556,8 +766,10 @@ public class Pages {
         do {
         	System.out.println("Which account would you like to delete?  Enter the account number.");
         	
-        	if (App.sc.hasNext("b"))
+        	if (App.sc.hasNext("b")) {
+        		App.sc.next();
         		return 0;
+        	}
         	// it must be an int
 	        while (!App.sc.hasNextInt()) {
 	        	System.out.println("Invalid input.  Enter a valid account number.");
